@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: automation-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: automation-api
+  template:
+    metadata:
+      labels:
+        app: automation-api
+    spec:
+      serviceAccountName: automation-service-account
+      containers:
+      - name: automation-api-container
+        image: jitenderp1234/automationapi:v7
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+
