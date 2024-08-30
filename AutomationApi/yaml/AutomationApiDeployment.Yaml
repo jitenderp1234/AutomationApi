@@ -15,7 +15,7 @@ spec:
       serviceAccountName: automation-service-account
       containers:
       - name: automation-api-container
-        image: jitenderp1234/automationapi:v7
+        image: jitenderp1234/automationapi:v9
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

@@ -6,11 +6,8 @@ C:\AutomationApi\AutomationApi\bin\Debug\net8.0\frontend.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\Chart.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\templates\frontend-service.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\templates\frontend.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\templates\ingress.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\ingress.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\templates\frontend-service.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\templates\frontend.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\templates\ingress.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.exe
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.deps.json
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.runtimeconfig.json

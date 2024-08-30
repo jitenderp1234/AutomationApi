@@ -35,8 +35,8 @@ namespace AutomationApi.Controllers
         public async Task<IActionResult> Deploy([FromBody] HelmDeploymentRequest request)
         {
             // Helm command with the replica count
-            //string helmCommand = $"helm install {request.ReleaseName} {request.ChartName} --set replicaCount={request.ReplicaCount}";
-            string helmCommand = "kubectl apply -f frontend.yaml";
+            string helmCommand = $"helm install {request.ReleaseName} {request.ChartName} --set replicaCount={request.ReplicaCount}";
+            //string helmCommand = "kubectl apply -f frontend.yaml";
             // Execute Helm command inside the pod
             var result = await Cli.Wrap("sh")
                 .WithArguments(new[] { "-c", helmCommand })
