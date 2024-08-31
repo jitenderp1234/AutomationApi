@@ -1,14 +1,9 @@
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\appsettings.Development.json
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\appsettings.json
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\Chart.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\frontend-service.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\frontend.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\Chart.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\templates\frontend-service.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\guestbook\templates\frontend.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\templates\frontend-service.yaml
-C:\AutomationApi\AutomationApi\bin\Debug\net8.0\templates\frontend.yaml
+C:\AutomationApi\AutomationApi\bin\Debug\net8.0\automation\Chart.yaml
+C:\AutomationApi\AutomationApi\bin\Debug\net8.0\automation\templates\frontend.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.exe
+C:\AutomationApi\AutomationApi\bin\Debug\net8.0\automation\templates\frontend-service.yaml
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.deps.json
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.runtimeconfig.json
 C:\AutomationApi\AutomationApi\bin\Debug\net8.0\AutomationApi.dll

@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: {{.Values.releaseName}}
 spec:
-  replicas: 1
+  replicas: {{.Values.replicaCount}}
   selector:
     matchLabels:
-      app: frontend 
+      app: {{.Values.releaseName}} 
   template:
     metadata:
       labels:
-        app: frontend
+        app: {{.Values.releaseName}}
     spec:
       containers:
       - image: phico/frontend:1.1
