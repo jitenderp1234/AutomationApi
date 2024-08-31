@@ -32,11 +32,11 @@ namespace AutomationApi.Controllers
         [HttpPost("deploy")]
         public async Task<IActionResult> Deploy([FromBody] HelmDeploymentRequest request)
         {
-            String helmlistCount = "helm list --all | grep -c 'default'";
-                var helmlistcountoutput = await Cli.Wrap("sh")
-                .WithArguments(new[] { "-c", helmlistCount })
-                .ExecuteBufferedAsync();
-            if (Convert.ToInt32(helmlistcountoutput.StandardOutput)>2)
+            String helmlistCount = "kubectl get deployments --no-headers | wc -l";
+            var helmlistcountoutput = await Cli.Wrap("sh")
+            .WithArguments(new[] { "-c", helmlistCount })
+            .ExecuteBufferedAsync();
+            if (Convert.ToInt32(helmlistcountoutput.StandardOutput) > 3)
             {
                 return BadRequest("Maximum number release already deployed");
 
