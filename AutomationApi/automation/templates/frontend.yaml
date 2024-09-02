@@ -13,10 +13,10 @@ spec:
         app: {{.Values.releaseName}}
     spec:
       containers:
-      - image: phico/frontend:1.1
+      - image: sajalgupta1988/sajal
         imagePullPolicy: Always
         name: frontend
         ports:
         - name: frontend
-          containerPort: 4200
+          containerPort: 8080
 

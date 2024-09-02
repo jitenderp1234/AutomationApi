@@ -23,7 +23,9 @@ chmod 700 get_helm.sh && \
 ./get_helm.sh && \
 rm get_helm.sh
 
-USER root
+# Install dnsutils for nslookup
+RUN apt-get update && apt-get install -y dnsutils
+
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
