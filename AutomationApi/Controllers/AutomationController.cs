@@ -25,7 +25,7 @@ namespace AutomationApi.Controllers
         public async Task<IActionResult> GetBackendAPI([FromBody] BackendAPiRequest request)
         {
 
-            String endpoint = $"http://{request.IPAddress.Replace('.', '-')}.default.pod.cluster.local:8080";
+            String endpoint = $"http://{request.IPAddress.Replace('.', '-')}.default.pod.cluster.local:80";
             var client = new HttpClient() { BaseAddress = new Uri(endpoint) };
             var content = new StringContent("yourJsonString", Encoding.UTF8, "application/json");
             var response = await client.GetAsync("/weatherforecast");

@@ -12,11 +12,13 @@ spec:
       labels:
         app: {{.Values.releaseName}}
     spec:
+      nodeSelector:
+        app: windows
       containers:
-      - image: sajalgupta1988/sajal
+      - image: sajalgupta1988/windowsapi
         imagePullPolicy: Always
         name: frontend
         ports:
         - name: frontend
-          containerPort: 8080
+          containerPort: 80
 

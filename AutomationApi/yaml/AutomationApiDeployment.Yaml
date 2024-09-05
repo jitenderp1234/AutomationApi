@@ -12,10 +12,12 @@ spec:
       labels:
         app: automation-api
     spec:
+      nodeSelector:
+        app: linux
       serviceAccountName: automation-service-account
       containers:
       - name: automation-api-container
-        image: jitenderp1234/automationapi:v50
+        image: jitenderp1234/automationapi:v51
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
