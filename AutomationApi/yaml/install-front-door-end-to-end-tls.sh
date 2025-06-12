@@ -34,7 +34,8 @@ EOF
  
 # Download and install Istio
 curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.26.0 sh -
-cd istio-1.26.0
+# Add istioctl to PATH
+export PATH="$PATH:$(pwd)/istio-1.26.0/bin"
  
 # Make sure namespace exists
 kubectl create namespace istio-system || true
@@ -44,7 +45,7 @@ istioctl install -f valuesIstio.yaml --skip-confirmation || {
   echo "Istio installation failed!"
   exit 1
 }
-cd -
+
 # Install Helm
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 -o get_helm.sh -s
 chmod 700 get_helm.sh
